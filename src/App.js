@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Weather from "./weather";
+// import Search from "./Search";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Weather />
+
+      <footer>
+        Cooded by{" "}
+        <a href="www.linkedin.com/in/tamana-farzami-">Tamana Farzami</a>
+        <br /> ,this project is <a href="/">open-sorced</a> and is hosted in
+        <a href="/">Netlify</a>
+      </footer>
     </div>
   );
 }
