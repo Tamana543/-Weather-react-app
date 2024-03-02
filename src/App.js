@@ -1,12 +1,12 @@
 import React from "react";
 import Weather from "./weather";
-// import Search from "./Search";
+
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <Weather />
+      <Weather city="Afghanistan" />
 
       <footer>
         Cooded by{" "}
