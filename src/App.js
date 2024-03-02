@@ -11,7 +11,11 @@ function App() {
       <footer>
         Cooded by{" "}
         <a href="www.linkedin.com/in/tamana-farzami-">Tamana Farzami</a>
-        <br /> ,this project is <a href="/">open-sorced</a> and is hosted in
+        <br /> ,this project is{" "}
+        <a href="https://github.com/Tamana543/-Weather-react-app">
+          open-sorced
+        </a>{" "}
+        and is hosted in
         <a href="/">Netlify</a>
       </footer>
     </div>
