@@ -1,5 +1,6 @@
 import React from "react";
 import MainDate from "./MainDate";
+import WeatherTemperature from "./weatherTemperature";
 
 export default function Search(props) {
   return (
@@ -12,25 +13,10 @@ export default function Search(props) {
             alt="weather image"
             className="weather-icon"
           />
-          <span className="Weather-degree">
-            {" "}
-            {Math.round(props.Time.temperature)}&deg;
-          </span>{" "}
-          <span className="unit">
-            <span className="C">
-              <a href="/">C</a>
-            </span>
-            <span className="F">
-              <a href="/">F</a>
-            </span>
-          </span>
+          <WeatherTemperature celsius={props.Time.temperature} />
         </p>
         <p className="date" id="date">
           <MainDate Time={props.Time.time} />
-          {/* {weatherData.time.getDate()} */}
-
-          {/* {weatherData.time.getHour()} */}
-          {/* Friday 19:00 */}
         </p>
         <ul className="description-main">
           <li className="description">{props.Time.description}</li>
