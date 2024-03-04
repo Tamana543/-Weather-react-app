@@ -8,11 +8,7 @@ export default function Search(props) {
       <h2 className="head">{props.Time.City}</h2>
       <div className="current-degree">
         <p className="CD-main">
-          <img
-            src={props.Time.icon}
-            alt="weather image"
-            className="weather-icon"
-          />
+          <img src={props.Time.icon} alt="weather" className="weather-icon" />
           <WeatherTemperature celsius={props.Time.temperature} />
         </p>
         <p className="date" id="date">
