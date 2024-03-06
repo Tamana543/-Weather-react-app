@@ -1,6 +1,7 @@
 import React from "react";
 import MainDate from "./MainDate";
 import WeatherTemperature from "./weatherTemperature";
+import WeatherForcast from "./WeatherForcast";
 
 export default function Search(props) {
   return (
@@ -22,7 +23,11 @@ export default function Search(props) {
           <li className="Wind">Wind: {Math.round(props.Time.wind)} Km/H</li>
         </ul>
         <div className="forcast">
-          <h4>forcast</h4>
+          <WeatherForcast
+            Icon={props.Time.icon}
+            City={props.Time.City}
+            Time={props.Time.time}
+          />
         </div>
       </div>
     </div>
