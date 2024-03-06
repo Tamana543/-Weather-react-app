@@ -10,13 +10,24 @@ function App() {
 
       <footer>
         Cooded by{" "}
-        <a href="www.linkedin.com/in/tamana-farzami-">Tamana Farzami</a>
+        <a href="www.linkedin.com/in/tamana-farzami-" rel="noopener noreferrer">
+          Tamana Farzami
+        </a>
         <br /> ,this project is{" "}
-        <a href="https://github.com/Tamana543/-Weather-react-app">
+        <a
+          href="https://github.com/Tamana543/-Weather-react-app 
+        "
+          rel="noopener noreferrer"
+        >
           open-sorced
         </a>{" "}
         and is hosted in
-        <a href="/">Netlify</a>
+        <a
+          href="https://splendorous-pastelito-d4805a.netlify.app/"
+          rel="noopener noreferrer"
+        >
+          Netlify
+        </a>
       </footer>
     </div>
   );
