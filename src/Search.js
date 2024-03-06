@@ -12,23 +12,25 @@ export default function Search(props) {
           <img src={props.Time.icon} alt="weather" className="weather-icon" />
           <WeatherTemperature celsius={props.Time.temperature} />
         </p>
-        <p className="date" id="date">
-          <MainDate Time={props.Time.time} />
-        </p>
-        <ul className="description-main">
-          <li className="description">{props.Time.description}</li>
-          <li className="humidity">
-            Humidity: {Math.round(props.Time.humidity)}%
-          </li>
-          <li className="Wind">Wind: {Math.round(props.Time.wind)} Km/H</li>
-        </ul>
-        <div className="forcast">
-          <WeatherForcast
-            Icon={props.Time.icon}
-            City={props.Time.City}
-            Time={props.Time.time}
-          />
+        <div className="second">
+          <p className="date" id="date">
+            <MainDate Time={props.Time.time} />
+          </p>
+          <ul className="description-main">
+            <li className="description">{props.Time.description}</li>
+            <li className="humidity">
+              Humidity: {Math.round(props.Time.humidity)}%
+            </li>
+            <li className="Wind">Wind: {Math.round(props.Time.wind)} Km/H</li>
+          </ul>
         </div>
+      </div>
+      <div className="forcast">
+        <WeatherForcast
+          Icon={props.Time.icon}
+          City={props.Time.City}
+          Time={props.Time.time}
+        />
       </div>
     </div>
   );

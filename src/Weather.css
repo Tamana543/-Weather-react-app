@@ -12,6 +12,18 @@
 .Weather-main a:link {
   text-decoration: none;
 }
+.current-degree {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+.second {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 0 !important;
+}
 .Weather-main h1 {
   color: #878787;
   font-size: 1.8rem;
@@ -57,7 +69,7 @@ form {
   font-size: 0.9rem;
   position: absolute;
   bottom: 4.5rem;
-  right: 17rem;
+  right: -2rem;
 }
 .Weather-degree {
   font-size: 2.5rem;
@@ -72,12 +84,13 @@ form {
 .date {
   font-size: 1rem;
   font-weight: 500;
+  margin: 0 !important;
 }
 .description-main {
   font-size: 1rem;
   font-weight: 500;
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
+  display: block;
+  /* justify-content: center;
+  gap: 2rem; */
   list-style-type: none;
 }
